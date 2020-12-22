@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="/peer.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="sender.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <p class="author">Author: MD Gaziur Rahman Noor</p>
+    <div class="prompt">
+        <form onsubmit="connect();return false;">
+            <h1>Sender</h1>
+            <h3 id="log">Type room id and click connect and allow microphone to continue(Make sure it is monitor of builtin audio)</h3>
+            <input id="room-name" placeholder="Enter room id" required>
+            <button>Connect</button>
+        </form>
+    </div>
+    <div class="streaming">
+        <i class="fas fa-microphone"></i>
+        <h1>Streaming Audio</h1>
+    </div>
+</body>
+<script>
+    const ID = '<%= ID %>';
+</script>
+</html>

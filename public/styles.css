@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: rgb(17, 17, 17);
+    color: white;
+}
+.author {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 1rem;
+    width: 100vw;
+}
+#log {
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form h3 {
+    margin-bottom: 1rem;
+    max-width: 400px;
+    padding: 15px;
+    text-align: center;
+}
+form input {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+form button {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+    background: black;
+    border: 2.5px solid black;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+}
+form button:hover {
+    background: white;
+    color: black;
+}
+.streaming {
+    display: none;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fa-microphone, .fa-volume-up {
+    font-size: 10rem;
+}
+
+.prompt {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
